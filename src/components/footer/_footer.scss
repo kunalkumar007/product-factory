@@ -1,0 +1,20 @@
+.footer{
+    @extend .folder;
+    width: 99%;
+    
+}
+.footer-left{
+        padding: 2%;
+    }
+
+@media(max-width:375px){
+    .footer-grid{
+        display: grid !important;
+    }
+    .footer-left{
+        padding: 25px ;
+    }
+    .footer-right{
+        padding: 25px 0;
+    }
+}

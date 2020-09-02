@@ -1,0 +1,27 @@
+$secondary:#578f53;
+
+.paper {
+	padding: 2rem;
+	transition: all .3s ease;
+    height: 12vh;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    z-index: -1;
+    &:hover{
+		background-color: $secondary;
+		box-shadow: 0 0 20px $secondary;
+        color: #ffffff;
+    }
+}
+.card {
+    transition: transform 0.3s ease;
+    z-index: 1;
+	&:hover {
+		cursor: pointer;
+		transform: scale(1.06);
+	}
+}

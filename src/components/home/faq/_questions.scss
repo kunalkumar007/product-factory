@@ -1,0 +1,11 @@
+.faq{
+    @extend .folder;
+    background: none;
+    h1{
+        @extend .text-folder;
+        text-align: center;
+        &::after{
+            content: 'FAQ';
+        }
+    }
+}

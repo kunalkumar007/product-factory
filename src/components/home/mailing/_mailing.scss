@@ -1,0 +1,90 @@
+.mailing {
+	@extend .folder;
+	background: #000000;
+	color: #ffffff;
+	width: 99%;
+	height: 50vh;
+}
+.right-mailing {
+	// flex: 1;
+
+	// border: 2px blue;
+	img {
+		width: 50vw;
+		height: 50vh;
+	}
+}
+.left-mailing {
+	// flex: 1;
+	margin-top: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.mailing-text {
+	max-width: 30vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	input {
+		border: none;
+		padding: 10px;
+		border-radius: 12px;
+		background: #707070;
+		color: white;
+		outline: none;
+		&::placeholder {
+			color: white;
+			font-family: 'Mulish', sans-serif;
+		}
+	}
+	button {
+		border: none;
+		outline: none;
+		padding: 8px 18px;
+		border-radius: 12px;
+		margin: 4vh;
+		background: $secondary;
+		color: white;
+		box-shadow: 0 0 8px 2px #578f53;
+		transition: transform 0.3s ease;
+		&:hover {
+			cursor: pointer;
+			transform: scale(1.08);
+		}
+	}
+}
+.mailing-alert {
+	background: white;
+}
+@media (max-width: 768px) {
+	.mailing-text {
+		h1 {
+			margin: 0;
+		}
+		p {
+			padding: 10px;
+		}
+		button {
+			margin: 0;
+		}
+	}
+}
+@media (max-width: 375px) {
+	.left-mailing {
+		width: 90%;
+		// border: 2px solid;
+		// flex: 2;
+	}
+	.mailing-text {
+		max-width: 80vw;
+	}
+	.right-mailing {
+		img {
+			width: 84vw;
+			height: 20vh;
+		}
+	}
+}

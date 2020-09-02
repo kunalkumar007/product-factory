@@ -1,0 +1,90 @@
+.banner {
+	background: #ffffff;
+	height: 788px;
+	width: 73%;
+	margin: auto;
+	display: flex;
+	box-shadow: 0 -40px 100px;
+}
+.left-banner {
+	display: flex;
+	flex-direction: column;
+	font-family: 'Mulish', sans-serif;
+	justify-content: center;
+	align-items: center;
+	flex: 1;
+	padding: 0 4rem;
+	h1 {
+		position: relative;
+		&::after {
+			content: 'UI / UX';
+			position: absolute;
+			color: #979898;
+			left: 0;
+			right: 0;
+			width: 100%;
+			opacity: 0.1;
+			font-size: 6.5rem;
+		}
+	}
+	h2 {
+		color: #8d8d8d;
+	}
+	button {
+		border: none;
+		padding: 12px 28px;
+		border-radius: 16px;
+		background: $primary;
+		outline: none;
+		color: #ffffff;
+		box-shadow: 0 0 20px $primary;
+		transition: transform 0.2s ease;
+		&:hover {
+			transform: scale(1.05);
+			cursor: pointer;
+		}
+	}
+}
+
+.right-banner {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex: 1;
+	img {
+		width: 80%;
+		margin: auto;
+	}
+}
+@media(max-width:768px){
+	.banner{
+		display: flex;
+		flex-direction: column-reverse;
+	}
+	.right-banner{
+		
+		img{
+			width: 60%;
+			
+		}
+	}
+	
+}
+@media(max-width:375px){
+	.banner{
+		width: 90%;
+	}
+	.left-banner{
+
+		h1{
+			// font-size: 2rem;
+			margin: 0 12px;
+			width: 80%;
+			// border: 2px solid;
+			padding: 12px;
+		}
+		button{
+			margin-bottom: 25px;
+		}
+	}
+}

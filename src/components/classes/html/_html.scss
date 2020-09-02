@@ -1,0 +1,61 @@
+$html-color: #569e68;
+
+.html-paper {
+	padding: 2rem;
+	transition: all 0.3s ease;
+	height: 12vh;
+	width: 12vw;
+	margin-top: 5vh;
+	margin-bottom: 5vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-weight: bold;
+	z-index: -1;
+	&:hover {
+		background-color: $html-color;
+		box-shadow: 0 0 20px $html-color;
+		color: #ffffff;
+	}
+}
+.html-card {
+	transition: transform 0.3s ease;
+	z-index: 1;
+	&:hover {
+		cursor: pointer;
+		transform: scale(1.06);
+	}
+}
+.html-heading {
+	@extend .text-folder;
+	text-align: center;
+	&::after {
+		content: 'CodingFactory';
+		font-size: 3rem;
+		color: $html-color;
+	}
+}
+.html-grid {
+	a {
+		text-decoration: none;
+	}
+}
+
+@media (max-width: 375px) {
+	.html-heading {
+		&::after {
+			content: 'Coding Factory';
+			font-size: 3rem;
+			// width: 90%;
+		}
+	}
+}
+@media (max-width: 320px) {
+	.html-heading {
+		&::after {
+            content: 'Coding Factory';
+			font-size: 2.5rem;
+			// width: 90%;
+		}
+	}
+}

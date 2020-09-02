@@ -1,3 +1,10 @@
-# rentcompair
-Rentcompair - Platform to compare rents available at multiple websites.
-[Visit Website](https://musing-brattain-cd26e0.netlify.app/)
+#Product Factory
+
+Welcome to Product Factory.
+
+ You can build all the dependency using: 
+```javascript
+npm install
+```
+
+Thanks for arriving here.
